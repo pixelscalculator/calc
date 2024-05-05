@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html class="scrollbars" lang="en">
+
+<head>
+    <link href="../css/0.e35c547d.css" rel="stylesheet" />
+    <link href="../css/LoaderBar.231d96a1.css" rel="stylesheet" />
+    <link href="../css/LoaderSpinner.cc011cc9.css" rel="stylesheet" />
+    <link href="../css/LoaderRipple.f63e42ec.css" rel="stylesheet" />
+    <link href="../css/17.f86cec2e.css" rel="stylesheet" />
+    <title>Skills &amp; Resources · Pixels Online</title>
+    <meta charset="utf-8" />
+    <link href="/site.webmanifest" rel="manifest" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="true" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://d31ss916pli4td.cloudfront.net" rel="preconnect" />
+    <link href="https://mesh-online-assets.s3.us-east-2.amazonaws.com" rel="preconnect" />
+    <link href="https://pixels-server.pixels.xyz/" rel="preconnect" />
+    <link href="../css/css2.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#4b0082" name="theme-color" />
+    <script data-svelte-h="svelte-1rrrq6" defer="" src="../js/hp-sdk.js"></script>
+    <link href="https://www.pixels.tips/resources" rel="canonical" />
+    <meta content="Discover all the item drop rates, XP, energy costs, market prices and profitability of resources that you can obtain through skills in Pixels Online." name="description" />
+    <meta content="website" property="og:type" />
+    <meta content="Skills &amp; Resources · Pixels Online" property="og:title" />
+    <meta content="Discover all the item drop rates, XP, energy costs, market prices and profitability of resources that you can obtain through skills in Pixels Online." property="og:description" />
+    <meta content="https://www.pixels.tips/resources" property="og:url" />
+    <meta content="https://assets.pixels.tips/og/resources-database.png" property="og:image" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta content="Pixels.xyz Skills &amp; Resources" property="og:image:alt" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Skills &amp; Resources · Pixels Online" name="twitter:title" />
+    <meta content="Discover all the item drop rates, XP, energy costs, market prices and profitability of resources that you can obtain through skills in Pixels Online." name="twitter:description" />
+    <meta content="https://assets.pixels.tips/og/resources-database.png" name="twitter:image" />
+    <link href="https://www.googletagmanager.com/" rel="dns-prefetch" />
+<style>
+/* CSS untuk menyembunyikan panah naik dan turun pada input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+#nilaiInput {
+    font-size: 12px; /* Ganti dengan ukuran yang diinginkan */
+}
+</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+    <div class="h-full" style="display: contents">
+        <div class="flex flex-col min-h-full bg-gradient">
+            <header class="fixed block z-50 left-0 top-0 w-full bg-bg-light border-b shadow-md border-fg-darker font-heading select-none">
+                <div class="absolute left-0 top-0 w-full hidden"><span class="loader svelte-dzdtc8"></span></div>
+                <div class="relative flex items-center max-w-5xl px-2 mx-auto h-10"><a class="flex py-1 items-center hover:opacity-60 transition-all lg:px-0.5" href=".html">
+                        <div class="flex-shrink-0 w-6 lg:w-5 lg:mr-1 -mt-1 -mr-0.5">
+                            <div class="w-[28px]">
+                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(); image-rendering: pixelated;" title=""></div>
+                            </div>
+                        </div>
+                        <h1 class="text-heading-4 text-fg-light hidden lg:block" data-svelte-h="svelte-1s1ki9t">pixels Calculator</h1>
+                    </a>
+                    <nav class="py-1 px-0 md:px-3 w-96 flex-grow ml-2">
+                        <ul class="hidden md:flex gap-3 text-heading-6 items-center">
+                            <li><a class="text-fg-subtle hover:opacity-60 transition-all block py-2 flex-col flex items-center" href="market.html">
+                                    <div class="text-blue-400"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <path d="M4 19h16M4 15l4-6l4 2l4-5l4 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        </svg></div> Market
+                                </a> </li>
+                            <li><a class="text-fg-light transition-all block py-2 flex-col flex items-center" href="resources.html">
+                                    <div class="text-fg-light"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <path d="M7 15h10v4a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm5-6a6 6 0 0 0-6-6H3v2a6 6 0 0 0 6 6h3m0 0a6 6 0 0 1 6-6h3v1a6 6 0 0 1-6 6h-3m0 3V9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        </svg></div> Resources
+                                </a> </li>
+                            <li><a class="text-fg-subtle hover:opacity-60 transition-all block py-2 flex-col flex items-center" href="crafting.html">
+                                    <div class="text-cyan-400"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M6 5h12l3 5l-8.5 9.5a.7.7 0 0 1-1 0L3 10z"></path>
+                                                <path d="M10 12L8 9.8l.6-1"></path>
+                                            </g>
+                                        </svg></div> Crafting
+                                </a> </li>
+                            <li><a class="text-fg-subtle hover:opacity-60 transition-all block py-2 flex-col flex items-center" href="energy.html">
+                                    <div class="text-yellow-400"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <path d="M13 3v7h6l-8 11v-7H5z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        </svg></div> Energy
+                                </a> </li>
+                            <li><a class="text-fg-subtle hover:opacity-60 transition-all block py-2 flex-col flex items-center" href="lands.html">
+                                    <div class="text-purple-400"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1-7 0a5 5 0 0 0-7 0zm0 16v-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        </svg></div> Lands
+                                </a> </li>
+                            <li><a class="text-fg-subtle hover:opacity-60 transition-all block py-2 flex-col flex items-center" href="guilds.html">
+                                    <div class="text-rose-400"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                            <path d="M15 19v-2a3 3 0 0 0-6 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5h4v3h3V5h4v3h3V5h4v14a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1M3 11h18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                        </svg></div> Guilds
+                                </a> </li>
+                            
+                        </ul>
+                        <div class="md:hidden ml-1">
+                            <div class="z-40 max-w-48"><button class="Button select-none flex justify-start items-center transition rounded-full border border-transparent bg-transparent hover:bg-bg-light text-fg-light px-3 py-1 space-x-1.5 font-normal" type="button">
+                                    <div class="text-xs leading-none flex-shrink-0">
+                                        <div class="text-text-violet-400" slot="icon-left">
+                                            <div class="transform-gpu will-change-transform"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                                    <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-2xs text-left font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow">Menu</div>
+                                    <div class="text-xs leading-none flex-shrink-0">
+                                        <div class="text-3xs" slot="icon-right"><svg height="1.2em" viewbox="0 0 24 24" width="1.2em">
+                                                <path d="m6 9l6 6l6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                            </svg></div>
+                                    </div>
+                                </button> </div>
+                        </div>
+                    </nav>
+                    <div class="py-1 ml-2 -mr-2">
+                        <div class="items-center gap-1 flex">
+                            <div class="hidden md:block"><a class="Button select-none flex justify-center items-center transition rounded-full border border-yellow-600 border-opacity-75 bg-bg hover:bg-bg-light text-fg-light px-2 py-1 space-x-1 font-normal" href="coins.html">
+                                    <div class="text-2xs leading-none flex-shrink-0">
+                                        <div class="w-3" slot="icon-left">
+                                            <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://assets.pixels.tips/images/icons/currency-coin.webp); image-rendering: pixelated;" title=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-3xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow"><span class="hidden lg:inline" data-svelte-h="svelte-up3gwc">Buy/Sell</span> Coins</div>
+                                    <div class="text-2xs leading-none flex-shrink-0"></div>
+                                </a></div>
+                            <div><button class="Button select-none flex justify-center items-center transition rounded-full border border-transparent bg-transparent hover:bg-bg-light text-fg-light px-2 py-1.5 space-x-1 font-normal" type="button">
+                                    <div class="text-xs leading-none flex-shrink-0"><svg height="1.2em" slot="icon-left" viewbox="0 0 24 24" width="1.2em">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M12 13a3 3 0 1 0 0-6a3 3 0 0 0 0 6"></path>
+                                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9s-9-1.8-9-9s1.8-9 9-9"></path>
+                                                <path d="M6 20.05V20a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v.05"></path>
+                                            </g>
+                                        </svg></div>
+                                    <div class="text-2xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow"><span class="whitespace-nowrap" data-svelte-h="svelte-1husc4r">Sign-In</span></div>
+                                    <div class="text-xs leading-none flex-shrink-0"></div>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="flex-grow mt-9 sm:mt-10 app-body">
+                <div class="transform-gpu will-change-transform">
+                    <div class="page-container-wide">
+                        <div class="flex flex-col md:flex-row gap-2 h-full">
+                            <div class="flex-grow order-2 min-w-0 h-full">
+                                <header class="mb-2 px-2 flex items-center gap-2 justify-center">
+                                    <div class="hidden sm:block text-fg-light text-xl"></div>
+                                    <h1 class="text-heading-1 text-left text-fg-light" data-svelte-h="svelte-eucq0a">Pixels Farming Calculator</h1>
+                                </header>
+                                <div class="card-round-sm pt-2 pb-3 px-3">
+                                    <div class="sm:mb-3 border-b border-fg-darker py-1 border-dotted sticky top-10 bg-bg-dark z-30 -mx-3">
+                                        
+                                    </div>
+                                    <div class="sm:-mt-3 sm:-mb-3"> </div>
+                                   
+                                    
+
+                                        <li class="block" id="farming">
+                                            <section class="sm:rounded-xl border-fg-darker sm:border bg-bg py-2 -mx-3 sm:-mx-1">
+                                                <div class="flex items-center mt-2 sm:mt-0 mb-2 px-3 gap-3">
+                                                    <div>
+                                                        <h3 class="text-heading-4 text-fg-light">Farming</h3> <strong style="color: grey;" class="block font-normal text-2xs text-fg-subtle"><b>Calculate your profit with this tools.</b>
+                                                        	<br>Information :
+                                                        	<br>Sell price : Your selling target
+                                                        	<br>Seed Count : The number of seeds you want to plant 
+                                                        	<br>CSM Price : Price of the consumable items you want to use for the plant
+                                                        	<br>Energy Gain : Amount of energy you get when consuming the item
+                                                        	<br>CSM Needed : Total number of consumable items you need 
+                                                        	<br>Coin Spent : Total coins you need for capital
+                                                            <br>Income : Includes market Fee <h style="color: orange;">'VIP (-1%)'</h> & <h style="color: white;">'Non-VIP (-10%)'</h>
+                                                         </strong>
+                                                    </div>
+                                                </div>
+                                                <div class="overflow-x-auto scrollbars">
+                                                    <div class="powertable text-2xs svelte-gw2dkz">
+                                                        <div data-component="powertable" data-name="main-container" data-prefix="skills-database-farming" data-status="completed">
+                                                            <div data-name="pTable" data-type="segment">
+                                                                <div data-name="table-container" data-segment_index="0">
+                                                                    <table>
+                                                                        <thead>
+                                                                            <tr data-name="titles-tr">
+                                                                                <th data-key="requiredLevel" data-sortable="false"><button disabled=""><span>Level</span></button> </th>
+                                                                                <th data-key="itemId" data-sortable="false"><button disabled=""><span>Item</span></button> </th>
+                                                                                <th data-key="SellPrice" data-sortable="false"><button disabled=""><span>Sell Price</span></button> </th>
+                                                                                <th data-key="SeedCount" data-sortable="false"><button disabled=""><span>Seed Count</span></button> </th>
+                                                                                <th data-key="CsmPrice" data-sortable="false"><button disabled=""><span>CSM Price</span></button> </th>
+                                                                                <th data-key="EnergyGain" data-sortable="false"><button disabled=""><span>Energy Gain</span></button> </th>
+                                                                                <th data-key="CsmNeeded" data-sortable="false"><button disabled=""><span>CSM Needed</span></button> </th>
+                                                                                <th data-key="CoinSpent" data-sortable="false"><button disabled=""><span>Coin Spent</span></button> </th>
+                                                                                <th data-key="IncomeVIP" data-sortable="false"><button disabled=""><span>Income(VIP)</span></button> </th>
+                                                                                <th data-key="IncomeNonVIP" data-sortable="false"><button disabled=""><span>Income(NON-VIP)</span></button> </th>
+                                                                                <th data-key="vipCleanProfit" data-sortable="false"><button disabled=""><span>VIP Clean profit</span></button></th>
+                                                                                <th data-key="NONvipCleanProfit" data-sortable="false"><button disabled=""><span>NON-VIP Clean profit</span></button></th>
+                                                                                <th data-key="harvestCooldown" data-sortable="false"><button disabled=""><span>Time</span></button> </th>
+                                                                                <th data-key="energyCost" data-sortable="false"><button disabled=""><span>Energy</span></button> </th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody><b>
+                                                                            
+                                                                            <tr data-id="2" data-index="2">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">*</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div class="flex gap-1 items-center group py-1><a " href="itm_popberryFruit.html">
+                                                                                            
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">INPUT</div>
+                                                                                        </div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+
+                                                                                            <div class="text-fg-light" style="text-align: center;">***</div>
+
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div class="flex items-center justify-end text-3xs text-fg-light">
+                                                                                    	<input type="number" id="SeedCount" name="SeedCount" inputmode="numeric" style="width: 80px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div class="flex items-center justify-end text-3xs text-fg-light">
+                                                                                    	<input type="number" id="CsmPrice" name="CsmPrice" inputmode="numeric" style="width: 80px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div class="flex items-center justify-end text-3xs text-fg-light">
+                                                                                    	<input type="number" id="EnergyGain" name="EnergyGain" inputmode="numeric" style="width: 80px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px">
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                               
+                                                                                </td>
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap333"></div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span></span></div>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr data-id="2" data-index="2">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 0</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_popberryFruit.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/items/itm_popberry.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Popberry</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                            	<input type="number" id="popberrySellPrice" name="popberrySellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="berryCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="popberryCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="popberryVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="popberryNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">1m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>3.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+
+
+                                                                            <tr data-id="7" data-index="7">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 2</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_butterberry.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//afd9457d-993c-4201-b580-eff1ff06f611.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Butterberry</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="butterberrySellPrice" name="butterberrySellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="1seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="1csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="1energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="berryCsmNeed1" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="butterberryCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="butterberryVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="butterberryNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit2" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit2" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">1m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>3.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="9" data-index="9">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 3</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_cloverFruit.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//f1c97a94-03a8-43cd-ba9b-cc925a2dc471.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Clover</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="cloverSellPrice" name="cloverSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="2seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="2csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="2energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="cloverCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="cloverCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="cloverVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="cloverNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit3" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit3" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">45m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="10" data-index="10">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 5</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_grainbow.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//615871a2-86c3-48d7-a643-3a1a4e5a344f.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Grainbow</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="grainbowSellPrice" name="grainbowSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="3seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="3csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="3energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="grainbowCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="grainbowCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="grainbowVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="grainbowNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit4" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit4" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">60m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>4 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="11" data-index="11">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 8</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_grumpkinFruit.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/items/itm_grumpkin.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Grumpkin</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="grumpkinSellPrice" name="grumpkinSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="4seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="4csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="4energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="grumpkinCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="grumpkinCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="grumpkinVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="grumpkinNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit5" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit5" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">180m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>7.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="12" data-index="12">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 11</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_wintermintFruit.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//933fb3e8-2214-4238-8d09-765394aa7b59.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Watermint</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="watermintSellPrice" name="watermintSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="5seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="5csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="5energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="watermintCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="watermintCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="watermintVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="watermintNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit6" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit6" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">240m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>8 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="13" data-index="13">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 15</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_scarrotFruit.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/items/v2/inventory_icon_scarrot.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Scarrot</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="scarotSellPrice" name="scarotSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="6seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="6csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="6energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="scarotCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="scarotCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="scarotVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="scarotNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit7" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit7" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">360m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>8 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="14" data-index="14">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 21</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_tenta.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//1d724c01-07bb-4130-ad36-d7bc83293fc9.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Astracactus</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="astracactusSellPrice" name="astracactusSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="7seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="7csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="7energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="astracactusCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="astracactusCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="astracactusVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="astracactusNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit8" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit8" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">420m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>11.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="15" data-index="15">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 25</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_hotato.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//99f67e34-68c8-4756-9c66-0a0e1eb0dec2.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Hotato</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="hotatoSellPrice" name="hotatoSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="8seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="8csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="8energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="hotatoCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="hotatoCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="hotatoVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="hotatoNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit9" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit9" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">300m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>10.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-id="16" data-index="16">
+                                                                                <td data-key="requiredLevel"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-left text-fg-light">Lvl 32</div>
+                                                                                </td>
+                                                                                <td data-key="itemId"><b>
+                                                                                    <div><a class="flex gap-1 items-center group py-1" href="itm_muckchuck.html">
+                                                                                            <div class="w-3.5 flex-shrink-0">
+                                                                                                <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//3dee626e-4975-462e-994c-4c8d2f25af28.png); image-rendering: pixelated;" title=""></div>
+                                                                                            </div>
+                                                                                            <div class="group-hover:text-link whitespace-nowrap overflow-hidden text-ellipsis transition-all text-heading-6">Muckchuck</div>
+                                                                                        </a></div>
+                                                                                </td>
+                                                                                <td data-key="SellPrice"><b>
+                                                                                    <div class="flex justify-end">
+                                                                                        <div class="text-3xs font-normal flex whitespace-nowrap items-center gap-0.5">
+                                                                                            <div class="text-fg-light">
+                                                                                                <input type="number" id="muckchuckSellPrice" name="muckchuckSellPrice" inputmode="numeric" style="width: 60px; height: 20px; background-color: rgba(2, 7, 28, 0.7); text-align: center; font-size: 12px;">
+                                                                                            </div>
+                                                                                            <div class="flex-shrink-0 -mt-[1px]"><img alt="Coins" class="pixelated" height="8" src="../images/currency-coin.webp" width="8" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </td>
+                                                                                <td data-key="SeedCount"><b>
+                                                                                    <div id="9seedCount" style="text-align: center;" class="items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmPrice"><b>
+                                                                                    <div id="9csmPrice" style="text-align: center;" class=" items-center justify-end text-3xs text-fg-light"></div>
+                                                                                </td>
+                                                                                <td data-key="EnergyGain"><b>
+                                                                                    <div id="9energyGain" style="text-align: center;" class="text-3xs whitespace-nowrap text-right"></div>
+                                                                                </td>
+                                                                                <td data-key="CsmNeeded"><b>
+                                                                                    <div id="muckchuckCsmNeed" class="text-3xs whitespace-nowrap flex items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="CoinSpent"><b>
+                                                                                    <div id="muckchuckCoinSpent" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeVIP"><b>
+                                                                                    <div id="muckchuckVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                <td data-key="IncomeNonVIP"><b>
+                                                                                    <div id="muckchuckNonVipIncome" style="text-align: center;" class="text-3xs whitespace-nowrap items-center justify-end"></div>
+                                                                                </td>
+                                                                                
+                                                                                <td data-key="vipCleanProfit"><b>
+                                                                                    <div id="VipCleanProfit10" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="NONvipCleanProfit"><b>
+                                                                                    <div id="nonVipCleanProfit10" class="text-3xs whitespace-nowrap"></div>
+                                                                                </td>
+                                                                                <td data-key="harvestCooldown"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap">60m</div>
+                                                                                </td>
+                                                                                <td data-key="energyCost"><b>
+                                                                                    <div class="text-3xs whitespace-nowrap text-center"><span>8.5 E</span></div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </b></tbody>
+                                                                        <tfoot>
+                                                                            <tr data-name="loading_bar-tr">
+                                                                                <th colspan="13"></th>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="lg:hidden">
+                        <div class="lg:hidden"></div>
+                    </div>
+                </div>
+            </main>
+            <footer class="mt-0">
+                <div class="chicken w-5 ml-auto svelte-ng4glc">
+                    <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://assets.pixels.tips/images/ornaments/chicken-brown.webp); image-rendering: pixelated;" title=""></div>
+                </div>
+                <div class="text-fg text-2xs bg-bg border-fg-dark px-3 py-2 sm:pb-3">
+                    <div class="max-w-3xl xl:max-w-4xl mx-auto grid grid-cols-12 items-end">
+                        <div class="col-span-12 sm:col-span-6">
+                            <div class="flex items-center gap-3"><a class="flex items-center gap-1 mb-1" href=".html">
+                                    <div class="flex-shrink-0">
+                                        <div class="w-[24px]">
+                                            <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://assets.pixels.tips/images/logos/pixels-tips-logo.webp); image-rendering: pixelated;" title=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-heading-4 text-fg-light" data-svelte-h="svelte-7ehpu1">pixels Calculator</div>
+                                </a>
+                                
+                            </div>
+                            <ul class="-mx-2 border-b divide-x divide-dotted divide-fg-dark border-dotted sm:border-0 border-fg-dark flex mb-2 pb-2 sm:mb-0 sm:pb-0 text-fg" data-svelte-h="svelte-14gocvr">
+                                <li><a class="hover:text-fg-light p-2" href="advertise.html">Advertise</a></li>
+                                <li><a class="hover:text-fg-light p-2" href="9jVgqJwdUM8AAsSZMfVg63.html" rel="noreferrer noopener" target="_blank">Pixels Stats</a></li>
+                                <li><a class="hover:text-fg-light p-2" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6">
+                            <div class="table w-auto ml-auto -mt-14 mb-6 sm:mt-0 sm:mb-0">
+                                <div class="mt-1 sm:mt-0 grid grid-cols-2 gap-1 mb-1">
+                                    <div><a class="Button select-none flex justify-center items-center transition rounded-full border border-fg-darker hover:border-fg bg-transparent text-fg-light px-2 py-1 space-x-1 font-normal" href="rskmq3vzWc.html" rel="noreferrer noopener" target="_blank">
+                                            <div class="text-2xs leading-none flex-shrink-0"></div>
+                                            <div class="text-3xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow"><svg height="1.2em" viewbox="0 0 640 512" width="1.2em">
+                                                    <path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91a337.461 337.461 0 0 0-14.9 30.6a447.848 447.848 0 0 0-134.426 0a309.541 309.541 0 0 0-15.135-30.6a1.89 1.89 0 0 0-1.924-.91a483.689 483.689 0 0 0-119.688 37.107a1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375a487.666 487.666 0 0 0 146.825 74.189a1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588a321.173 321.173 0 0 1-45.868-21.853a1.885 1.885 0 0 1-.185-3.126a251.047 251.047 0 0 0 9.109-7.137a1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233a234.533 234.533 0 0 0 9.132 7.16a1.884 1.884 0 0 1-.162 3.126a301.407 301.407 0 0 1-45.89 21.83a1.875 1.875 0 0 0-1 2.611a391.055 391.055 0 0 0 30.014 48.815a1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239c0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239c0 32.654-23.177 59.241-52.844 59.241" fill="currentColor"></path>
+                                                </svg></div>
+                                            <div class="text-2xs leading-none flex-shrink-0"></div>
+                                        </a></div>
+                                    <div><a class="Button select-none flex justify-center items-center transition rounded-full border border-fg-darker hover:border-fg bg-transparent text-fg-light px-2 py-1 space-x-1 font-normal" href="pixels_tips.html" rel="noreferrer noopener" target="_blank">
+                                            <div class="text-2xs leading-none flex-shrink-0"></div>
+                                            <div class="text-3xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow"><svg height="1.2em" viewbox="0 0 512 512" width="1.2em">
+                                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645c0 138.72-105.583 298.558-298.558 298.558c-59.452 0-114.68-17.219-161.137-47.106c8.447.974 16.568 1.299 25.34 1.299c49.055 0 94.213-16.568 130.274-44.832c-46.132-.975-84.792-31.188-98.112-72.772c6.498.974 12.995 1.624 19.818 1.624c9.421 0 18.843-1.3 27.614-3.573c-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319c-28.264-18.843-46.781-51.005-46.781-87.391c0-19.492 5.197-37.36 14.294-52.954c51.655 63.675 129.3 105.258 216.365 109.807c-1.624-7.797-2.599-15.918-2.599-24.04c0-57.828 46.782-104.934 104.934-104.934c30.213 0 57.502 12.67 76.67 33.137c23.715-4.548 46.456-13.32 66.599-25.34c-7.798 24.366-24.366 44.833-46.132 57.827c21.117-2.273 41.584-8.122 60.426-16.243c-14.292 20.791-32.161 39.308-52.628 54.253" fill="currentColor"></path>
+                                                </svg></div>
+                                            <div class="text-2xs leading-none flex-shrink-0"></div>
+                                        </a></div>
+                                </div>
+                            </div>
+                            <div class="text-fg-subtle text-center sm:text-right" data-svelte-h="svelte-2r5q4w"><a class="text-heading-5 text-fg" href="index.html" rel="noreferrer" target="_blank">Pixels Calculator</a>
+                                tools. made by Indonesian Pixel Gamers </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="flex w-full flex-col items-center justify-center">
+            <div class="relative z-10">
+                <div style="display: none;">
+                    <div style="display: none;"><button class="fixed inset-0 bg-bg-dark bg-opacity-80 backdrop-blur-sm"></button></div>
+                    <div class="fixed inset-0 overflow-y-auto">
+                        <div class="flex min-h-full items-center justify-center p-4 text-center">
+                            <div style="display: none;">
+                                <div class="w-full max-w-xs transform-gpu overflow-hidden text-left align-middle shadow-xl transition-all">
+                                    <div class="card-round mb-0.5">
+                                        <div class="block w-5 mb-1 mx-auto">
+                                            <div class="aspect-square bg-contain bg-center bg-no-repeat item-sprite" style="background-image: url(https://d31ss916pli4td.cloudfront.net/uploadedAssets//cbe3706e-4cb0-4307-a01d-f324ce764f8e.png); image-rendering: pixelated;" title=""></div>
+                                        </div>
+                                        <h3 class="text-heading-4 text-center" data-svelte-h="svelte-1at26xq">Sign-in to pixels.tips</h3>
+                                        <div class="rounded-xl px-3 my-2">
+                                            <div class="space-y-2"><button class="Button select-none flex justify-center items-center transition w-full rounded-full border border-transparent bg-primary hover:bg-primary-light text-fg-lighter px-3 py-2 space-x-1.5 font-normal" type="button">
+                                                    <div class="text-sm leading-none flex-shrink-0">
+                                                        <div slot="icon-left"><svg height="1.2em" viewbox="0 0 640 512" width="1.2em">
+                                                                <path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91a337.461 337.461 0 0 0-14.9 30.6a447.848 447.848 0 0 0-134.426 0a309.541 309.541 0 0 0-15.135-30.6a1.89 1.89 0 0 0-1.924-.91a483.689 483.689 0 0 0-119.688 37.107a1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375a487.666 487.666 0 0 0 146.825 74.189a1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588a321.173 321.173 0 0 1-45.868-21.853a1.885 1.885 0 0 1-.185-3.126a251.047 251.047 0 0 0 9.109-7.137a1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233a234.533 234.533 0 0 0 9.132 7.16a1.884 1.884 0 0 1-.162 3.126a301.407 301.407 0 0 1-45.89 21.83a1.875 1.875 0 0 0-1 2.611a391.055 391.055 0 0 0 30.014 48.815a1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239c0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239c0 32.654-23.177 59.241-52.844 59.241" fill="currentColor"></path>
+                                                            </svg></div>
+                                                    </div>
+                                                    <div class="text-xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow">Sign-in with Discord</div>
+                                                    <div class="text-sm leading-none flex-shrink-0"></div>
+                                                </button></div>
+                                        </div>
+                                        <div class="space-y-2 px-3 w-48 mx-auto">
+                                            <div><button class="Button select-none flex justify-center items-center transition w-full rounded-full border border-transparent bg-transparent hover:bg-bg-light text-fg-light px-2 py-1.5 space-x-1 font-normal" type="button">
+                                                    <div class="text-xs leading-none flex-shrink-0"></div>
+                                                    <div class="text-2xs text-center font-heading whitespace-nowrap leading-normal text-ellipsis overflow-hidden flex-grow">Go Back</div>
+                                                    <div class="text-xs leading-none flex-shrink-0"></div>
+                                                </button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+<script>
+// Event listener untuk mendeteksi perubahan pada input
+document.getElementById("SeedCount").addEventListener("input", hitungNilai);
+document.getElementById("CsmPrice").addEventListener("input", hitungNilai);
+document.getElementById("EnergyGain").addEventListener("input", hitungNilai);
+document.getElementById("popberrySellPrice").addEventListener("input", hitungNilai);
+document.getElementById("butterberrySellPrice").addEventListener("input", hitungNilai);
+document.getElementById("cloverSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("grainbowSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("grumpkinSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("watermintSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("scarotSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("astracactusSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("hotatoSellPrice").addEventListener("input", hitungNilai);
+document.getElementById("muckchuckSellPrice").addEventListener("input", hitungNilai);
+
+// Fungsi untuk melakukan perhitungan
+function hitungNilai() {
+    // Mendapatkan nilai dari input
+    var SeedCount = parseFloat(document.getElementById("SeedCount").value);
+    var popberrySellPrice = parseFloat(document.getElementById("popberrySellPrice").value);
+    var butterberrySellPrice = parseFloat(document.getElementById("butterberrySellPrice").value);
+    var cloverSellPrice = parseFloat(document.getElementById("cloverSellPrice").value);
+    var grainbowSellPrice = parseFloat(document.getElementById("grainbowSellPrice").value);
+    var grumpkinSellPrice = parseFloat(document.getElementById("grumpkinSellPrice").value);
+    var watermintSellPrice = parseFloat(document.getElementById("watermintSellPrice").value);
+    var scarotSellPrice = parseFloat(document.getElementById("scarotSellPrice").value);
+    var astracactusSellPrice = parseFloat(document.getElementById("astracactusSellPrice").value);
+    var hotatoSellPrice = parseFloat(document.getElementById("hotatoSellPrice").value);
+    var muckchuckSellPrice = parseFloat(document.getElementById("muckchuckSellPrice").value);
+    var CsmPrice = parseFloat(document.getElementById("CsmPrice").value);
+    var energyGain = parseFloat(document.getElementById("EnergyGain").value);
+    var energyBerry = 3.5;
+    var energyClover = 5;
+    var energyGrainbow = 4;
+    var energyGrumpkin = 7.5;
+    var energyWatermint = 8;
+    var energyScarot = 8;
+    var energyAstracactus = 11.5;
+    var energyHotato = 10.5;
+    var energyMuckchuck = 8.5;
+
+    // Melakukan perhitungan
+    var berryCsmCalc = energyBerry * SeedCount;
+    var berryCsmNeed = berryCsmCalc / energyGain;
+    var cloverCsmCalc = energyClover * SeedCount;
+    var cloverCsmNeed = cloverCsmCalc / energyGain;
+    var grainbowCsmCalc = energyGrainbow * SeedCount;
+    var grainbowCsmNeed = grainbowCsmCalc / energyGain;
+    var grumpkinCsmCalc = energyGrumpkin * SeedCount;
+    var grumpkinCsmNeed = grumpkinCsmCalc / energyGain;
+    var watermintCsmCalc = energyWatermint * SeedCount;
+    var watermintCsmNeed = watermintCsmCalc / energyGain;
+    var scarotCsmCalc = energyScarot * SeedCount;
+    var scarotCsmNeed = scarotCsmCalc / energyGain;
+    var astracactusCsmCalc = energyAstracactus * SeedCount;
+    var astracactusCsmNeed = astracactusCsmCalc / energyGain;
+    var hotatoCsmCalc = energyHotato * SeedCount;
+    var hotatoCsmNeed = hotatoCsmCalc / energyGain;
+    var muckchuckCsmCalc = energyMuckchuck * SeedCount;
+    var muckchuckCsmNeed = muckchuckCsmCalc / energyGain;
+
+
+    //decimal kicking
+    var finalberryCsmNeed = berryCsmNeed.toFixed(2);
+    var finalcloverCsmNeed = cloverCsmNeed.toFixed(2);
+    var finalgrainbowCsmNeed = grainbowCsmNeed.toFixed(2);
+    var finalgrumpkinCsmNeed = grumpkinCsmNeed.toFixed(2);
+    var finalwatermintCsmNeed = watermintCsmNeed.toFixed(2);
+    var finalscarotCsmNeed = scarotCsmNeed.toFixed(2);
+    var finalastracactusCsmNeed = astracactusCsmNeed.toFixed(2);
+    var finalhotatoCsmNeed = hotatoCsmNeed.toFixed(2);
+    var finalmuckchuckCsmNeed = muckchuckCsmNeed.toFixed(2);
+
+    //seed price
+    var popberrySeedPrice = 1;
+    var butterberrySeedPrice = 1;
+    var cloverSeedPrice = 3;
+    var grainbowSeedPrice = 3;
+    var grumpkinSeedPrice = 9;
+    var watermintSeedPrice = 12;
+    var scarotSeedPrice = 15;
+    var astracactusSeedPrice = 18;
+    var hotatoSeedPrice = 123.5;
+    var muckchuckSeedPrice = 36;
+
+    //energy x seed
+    var popberrySeedCoin = popberrySeedPrice * SeedCount;
+    var butterberrySeedCoin = butterberrySeedPrice * SeedCount;
+    var cloverSeedCoin = cloverSeedPrice * SeedCount;
+    var grainbowSeedCoin = grainbowSeedPrice * SeedCount;
+    var grumpkinSeedCoin = grumpkinSeedPrice * SeedCount;
+    var watermintSeedCoin = watermintSeedPrice * SeedCount;
+    var scarotSeedCoin = scarotSeedPrice * SeedCount;
+    var astracactusSeedCoin = astracactusSeedPrice * SeedCount;
+    var hotatoSeedCoin = hotatoSeedPrice * SeedCount;
+    var muckchuckSeedCoin = muckchuckSeedPrice * SeedCount;
+
+    //CSM Price x CsmNeeded
+    var popberryEnergyCoin = CsmPrice * finalberryCsmNeed;
+    var butterberryEnergyCoin = CsmPrice * finalberryCsmNeed;
+    var cloverEnergyCoin = CsmPrice * finalcloverCsmNeed;
+    var grainbowEnergyCoin = CsmPrice * finalgrainbowCsmNeed;
+    var grumpkinEnergyCoin = CsmPrice * finalgrumpkinCsmNeed;
+    var watermintEnergyCoin = CsmPrice * finalwatermintCsmNeed;
+    var scarotEnergyCoin = CsmPrice * finalscarotCsmNeed;
+    var astracactusEnergyCoin = CsmPrice * finalastracactusCsmNeed;
+    var hotatoEnergyCoin = CsmPrice * finalhotatoCsmNeed;
+    var muckchuckEnergyCoin = CsmPrice * finalmuckchuckCsmNeed;
+
+
+    // Coin Spent
+    var popberryCoinSpent = popberrySeedCoin + popberryEnergyCoin;
+    var butterberryCoinSpent = butterberrySeedCoin + butterberryEnergyCoin;
+    var cloverCoinSpent = cloverSeedCoin + cloverEnergyCoin;
+    var grainbowCoinSpent = grainbowSeedCoin + grainbowEnergyCoin;
+    var grumpkinCoinSpent = grumpkinSeedCoin + grumpkinEnergyCoin;
+    var watermintCoinSpent = watermintSeedCoin +watermintEnergyCoin;
+    var scarotCoinSpent = scarotSeedCoin + scarotEnergyCoin;
+    var astracactusCoinSpent = astracactusSeedCoin + astracactusEnergyCoin;
+    var hotatoCoinSpent = hotatoSeedCoin + hotatoEnergyCoin;
+    var muckchuckCoinSpent = muckchuckSeedCoin + muckchuckEnergyCoin;
+
+    //pembatas desimal coin spent
+    var FpopberryCoinSpent = popberryCoinSpent.toFixed(1);
+    var FbutterberryCoinSpent = butterberryCoinSpent.toFixed(1);
+    var FcloverCoinSpent = cloverCoinSpent.toFixed(1);
+    var FgrainbowCoinSpent = grainbowCoinSpent.toFixed(1);
+    var FgrumpkinCoinSpent = grumpkinCoinSpent.toFixed(1);
+    var FwatermintCoinSpent = watermintCoinSpent.toFixed(1);
+    var FscarotCoinSpent = scarotCoinSpent.toFixed(1);
+    var FastracactusCoinSpent = astracactusCoinSpent.toFixed(1);
+    var FhotatoCoinSpent = hotatoCoinSpent.toFixed(1);
+    var FmuckchuckCoinSpent = muckchuckCoinSpent.toFixed(1);
+
+    //VIP-Income
+    var popberryVipIncome = (SeedCount * popberrySellPrice) * 0.99;
+    var butterberryVipIncome = (SeedCount * butterberrySellPrice) * 0.99;
+    var cloverVipIncome = (SeedCount * cloverSellPrice) * 0.99;
+    var grainbowVipIncome = (SeedCount * grainbowSellPrice) * 0.99;
+    var grumpkinVipIncome = (SeedCount * grumpkinSellPrice) * 0.99;
+    var watermintVipIncome = (SeedCount * watermintSellPrice) * 0.99;
+    var scarotVipIncome = (SeedCount * scarotSellPrice) * 0.99;
+    var astracactusVipIncome = (SeedCount * astracactusSellPrice) * 0.99;
+    var hotatoVipIncome = (SeedCount * hotatoSellPrice) * 0.99;
+    var muckchuckVipIncome = (SeedCount * muckchuckSellPrice) * 0.99;
+
+    //NonVIP-Income
+    var popberryNonVipIncome = (SeedCount * popberrySellPrice) * 0.9;
+    var butterberryNonVipIncome = (SeedCount * butterberrySellPrice) * 0.9;
+    var cloverNonVipIncome = (SeedCount * cloverSellPrice) * 0.9;
+    var grainbowNonVipIncome = (SeedCount * grainbowSellPrice) * 0.9;
+    var grumpkinNonVipIncome = (SeedCount * grumpkinSellPrice) * 0.9;
+    var watermintNonVipIncome = (SeedCount * watermintSellPrice) * 0.9;
+    var scarotNonVipIncome = (SeedCount * scarotSellPrice) * 0.9;
+    var astracactusNonVipIncome = (SeedCount * astracactusSellPrice) * 0.9;
+    var hotatoNonVipIncome = (SeedCount * hotatoSellPrice) * 0.9;
+    var muckchuckNonVipIncome = (SeedCount * muckchuckSellPrice) * 0.9;
+
+    // Profit Vip
+    var VipCleanProfit = popberryVipIncome - FpopberryCoinSpent;
+    var butterberryCleanProfit = butterberryVipIncome - FbutterberryCoinSpent;
+    var cloverVipCleanProfit = cloverVipIncome - FcloverCoinSpent;
+    var grainbowVipCleanProfit = grainbowVipIncome - FgrainbowCoinSpent;
+    var grumpkinVipCleanProfit = grumpkinVipIncome - FgrumpkinCoinSpent;
+    var watermintVipCleanProfit = watermintVipIncome - FwatermintCoinSpent;
+    var scarotVipCleanProfit = scarotVipIncome - FscarotCoinSpent;
+    var astracactusVipCleanProfit = astracactusVipIncome - FastracactusCoinSpent;
+    var hotatoVipCleanProfit = hotatoVipIncome - FhotatoCoinSpent;
+    var muckchuckVipCleanProfit = muckchuckVipIncome - FmuckchuckCoinSpent;
+
+    // Profit Non VIP
+    var nonVipCleanProfit = popberryNonVipIncome - FpopberryCoinSpent;
+    var butterberryCleanProfitnon = butterberryNonVipIncome - FbutterberryCoinSpent;
+    var clovernonVipCleanProfit = cloverNonVipIncome - FcloverCoinSpent;
+    var grainbownonVipCleanProfit = grainbowNonVipIncome - FgrainbowCoinSpent;
+    var grumpkinnonVipCleanProfit = grumpkinNonVipIncome - FgrumpkinCoinSpent;
+    var watermintnonVipCleanProfit = watermintNonVipIncome - FwatermintCoinSpent;
+    var scarotnonVipCleanProfit = scarotNonVipIncome - FscarotCoinSpent;
+    var astracactusnonVipCleanProfit = astracactusNonVipIncome - FastracactusCoinSpent;
+    var hotatononVipCleanProfit = hotatoNonVipIncome - FhotatoCoinSpent;
+    var muckchucknonVipCleanProfit = muckchuckNonVipIncome - FmuckchuckCoinSpent;
+
+    //Nilai Profit VIP
+    document.getElementById("nonVipCleanProfit").textContent = nonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit2").textContent = butterberryCleanProfitnon;
+    document.getElementById("nonVipCleanProfit3").textContent = clovernonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit4").textContent = grainbownonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit5").textContent = grumpkinnonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit6").textContent = watermintnonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit7").textContent = scarotnonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit8").textContent = astracactusnonVipCleanProfit;
+    document.getElementById("nonVipCleanProfit9").textContent = hotatononVipCleanProfit;
+    document.getElementById("nonVipCleanProfit10").textContent = muckchucknonVipCleanProfit;
+
+    //Nilai Profit VIP
+    document.getElementById("VipCleanProfit").textContent = VipCleanProfit;
+    document.getElementById("VipCleanProfit2").textContent = butterberryCleanProfit;
+    document.getElementById("VipCleanProfit3").textContent = cloverVipCleanProfit;
+    document.getElementById("VipCleanProfit4").textContent = grainbowVipCleanProfit;
+    document.getElementById("VipCleanProfit5").textContent = grumpkinVipCleanProfit;
+    document.getElementById("VipCleanProfit6").textContent = watermintVipCleanProfit;
+    document.getElementById("VipCleanProfit7").textContent = scarotVipCleanProfit;
+    document.getElementById("VipCleanProfit8").textContent = astracactusVipCleanProfit;
+    document.getElementById("VipCleanProfit9").textContent = hotatoVipCleanProfit;
+    document.getElementById("VipCleanProfit10").textContent = muckchuckVipCleanProfit;
+
+    //Nilai nonVip Income
+    document.getElementById("popberryNonVipIncome").textContent = popberryNonVipIncome;
+    document.getElementById("butterberryNonVipIncome").textContent = butterberryNonVipIncome;
+    document.getElementById("cloverNonVipIncome").textContent = cloverNonVipIncome;
+    document.getElementById("grainbowNonVipIncome").textContent = grainbowNonVipIncome;
+    document.getElementById("grumpkinNonVipIncome").textContent = grumpkinNonVipIncome;
+    document.getElementById("watermintNonVipIncome").textContent = watermintNonVipIncome;
+    document.getElementById("scarotNonVipIncome").textContent = scarotNonVipIncome;
+    document.getElementById("astracactusNonVipIncome").textContent = astracactusNonVipIncome;
+    document.getElementById("hotatoNonVipIncome").textContent = hotatoNonVipIncome;
+    document.getElementById("muckchuckNonVipIncome").textContent = muckchuckNonVipIncome;
+
+    //Nilai Vip Income
+    document.getElementById("popberryVipIncome").textContent = popberryVipIncome;
+    document.getElementById("butterberryVipIncome").textContent = butterberryVipIncome;
+    document.getElementById("cloverVipIncome").textContent = cloverVipIncome;
+    document.getElementById("grainbowVipIncome").textContent = grainbowVipIncome;
+    document.getElementById("grumpkinVipIncome").textContent = grumpkinVipIncome;
+    document.getElementById("watermintVipIncome").textContent = watermintVipIncome;
+    document.getElementById("scarotVipIncome").textContent = scarotVipIncome;
+    document.getElementById("astracactusVipIncome").textContent = astracactusVipIncome;
+    document.getElementById("hotatoVipIncome").textContent = hotatoVipIncome;
+    document.getElementById("muckchuckVipIncome").textContent = muckchuckVipIncome;
+
+    // Nilai Coin Spent
+    document.getElementById("popberryCoinSpent").textContent = FpopberryCoinSpent;
+    document.getElementById("butterberryCoinSpent").textContent = FbutterberryCoinSpent;
+    document.getElementById("cloverCoinSpent").textContent = FcloverCoinSpent;
+    document.getElementById("grainbowCoinSpent").textContent = FgrainbowCoinSpent;
+    document.getElementById("grumpkinCoinSpent").textContent = FgrumpkinCoinSpent;
+    document.getElementById("watermintCoinSpent").textContent = FwatermintCoinSpent;
+    document.getElementById("scarotCoinSpent").textContent = FscarotCoinSpent;
+    document.getElementById("astracactusCoinSpent").textContent = FastracactusCoinSpent;
+    document.getElementById("hotatoCoinSpent").textContent = FhotatoCoinSpent;
+    document.getElementById("muckchuckCoinSpent").textContent = FmuckchuckCoinSpent;
+
+
+    //nilai seed repeat
+    document.getElementById("seedCount").textContent = SeedCount;
+    document.getElementById("1seedCount").textContent = SeedCount;
+    document.getElementById("2seedCount").textContent = SeedCount;
+    document.getElementById("3seedCount").textContent = SeedCount;
+    document.getElementById("4seedCount").textContent = SeedCount;
+    document.getElementById("5seedCount").textContent = SeedCount;
+    document.getElementById("6seedCount").textContent = SeedCount;
+    document.getElementById("7seedCount").textContent = SeedCount;
+    document.getElementById("8seedCount").textContent = SeedCount;
+    document.getElementById("9seedCount").textContent = SeedCount;
+
+    //nilai csm pice repeat
+    document.getElementById("csmPrice").textContent = CsmPrice;
+    document.getElementById("1csmPrice").textContent = CsmPrice;
+    document.getElementById("2csmPrice").textContent = CsmPrice;
+    document.getElementById("3csmPrice").textContent = CsmPrice;
+    document.getElementById("4csmPrice").textContent = CsmPrice;
+    document.getElementById("5csmPrice").textContent = CsmPrice;
+    document.getElementById("6csmPrice").textContent = CsmPrice;
+    document.getElementById("7csmPrice").textContent = CsmPrice;
+    document.getElementById("8csmPrice").textContent = CsmPrice;
+    document.getElementById("9csmPrice").textContent = CsmPrice;
+
+    //nilai energy gain repeat
+    document.getElementById("energyGain").textContent = energyGain;
+    document.getElementById("1energyGain").textContent = energyGain;
+    document.getElementById("2energyGain").textContent = energyGain;
+    document.getElementById("3energyGain").textContent = energyGain;
+    document.getElementById("4energyGain").textContent = energyGain;
+    document.getElementById("5energyGain").textContent = energyGain;
+    document.getElementById("6energyGain").textContent = energyGain;
+    document.getElementById("7energyGain").textContent = energyGain;
+    document.getElementById("8energyGain").textContent = energyGain;
+    document.getElementById("9energyGain").textContent = energyGain;
+
+
+
+    // Menampilkan hasil perhitungan tanpa teks tambahan
+    document.getElementById("berryCsmNeed").textContent = finalberryCsmNeed;
+    document.getElementById("berryCsmNeed1").textContent = finalberryCsmNeed;
+    document.getElementById("cloverCsmNeed").textContent = finalcloverCsmNeed;
+    document.getElementById("grainbowCsmNeed").textContent = finalgrainbowCsmNeed;
+    document.getElementById("grumpkinCsmNeed").textContent = finalgrumpkinCsmNeed;
+    document.getElementById("watermintCsmNeed").textContent = finalwatermintCsmNeed;
+    document.getElementById("scarotCsmNeed").textContent = finalscarotCsmNeed;
+    document.getElementById("astracactusCsmNeed").textContent = finalastracactusCsmNeed;
+    document.getElementById("hotatoCsmNeed").textContent = finalhotatoCsmNeed;
+    document.getElementById("muckchuckCsmNeed").textContent = finalmuckchuckCsmNeed;
+
+    
+// Kode perhitungan
+    var VipCleanProfit = popberryVipIncome - FpopberryCoinSpent;
+    var butterberryCleanProfit = butterberryVipIncome - FbutterberryCoinSpent;
+    var cloverVipCleanProfit = cloverVipIncome - FcloverCoinSpent;
+    var grainbowVipCleanProfit = grainbowVipIncome - FgrainbowCoinSpent;
+    var grumpkinVipCleanProfit = grumpkinVipIncome - FgrumpkinCoinSpent;
+    var watermintVipCleanProfit = watermintVipIncome - FwatermintCoinSpent;
+    var scarotVipCleanProfit = scarotVipIncome - FscarotCoinSpent;
+    var astracactusVipCleanProfit = astracactusVipIncome - FastracactusCoinSpent;
+    var hotatoVipCleanProfit = hotatoVipIncome - FhotatoCoinSpent;
+    var muckchuckVipCleanProfit = muckchuckVipIncome - FmuckchuckCoinSpent;
+// Ambil elemen HTML tempat hasil ditampilkan
+
+var VipCleanProfitElemen = document.getElementById("VipCleanProfit");
+var VipCleanProfitElemen2 = document.getElementById("VipCleanProfit2");
+var VipCleanProfitElemen3 = document.getElementById("VipCleanProfit3");
+var VipCleanProfitElemen4 = document.getElementById("VipCleanProfit4");
+var VipCleanProfitElemen5 = document.getElementById("VipCleanProfit5");
+var VipCleanProfitElemen6 = document.getElementById("VipCleanProfit6");
+var VipCleanProfitElemen7 = document.getElementById("VipCleanProfit7");
+var VipCleanProfitElemen8 = document.getElementById("VipCleanProfit8");
+var VipCleanProfitElemen9 = document.getElementById("VipCleanProfit9");
+var VipCleanProfitElemen10 = document.getElementById("VipCleanProfit10");
+
+var VipCleanProfit = parseFloat(VipCleanProfitElemen.textContent);
+var VipCleanProfit2 = parseFloat(VipCleanProfitElemen2.textContent);
+var VipCleanProfit3 = parseFloat(VipCleanProfitElemen3.textContent);
+var VipCleanProfit4 = parseFloat(VipCleanProfitElemen4.textContent);
+var VipCleanProfit5 = parseFloat(VipCleanProfitElemen5.textContent);
+var VipCleanProfit6 = parseFloat(VipCleanProfitElemen6.textContent);
+var VipCleanProfit7 = parseFloat(VipCleanProfitElemen7.textContent);
+var VipCleanProfit8 = parseFloat(VipCleanProfitElemen8.textContent);
+var VipCleanProfit9 = parseFloat(VipCleanProfitElemen9.textContent);
+var VipCleanProfit10 = parseFloat(VipCleanProfitElemen10.textContent);
+
+// Ubah warna berdasarkan nilai
+if (VipCleanProfit < 0) {
+    VipCleanProfitElemen.style.color = "red";
+} else {
+    VipCleanProfitElemen.style.color = "green";
+}
+if (VipCleanProfit2 < 0) {
+    VipCleanProfitElemen2.style.color = "red";
+} else {
+    VipCleanProfitElemen2.style.color = "green";
+}
+if (VipCleanProfit3 < 0) {
+    VipCleanProfitElemen3.style.color = "red";
+} else {
+    VipCleanProfitElemen3.style.color = "green";
+}
+if (VipCleanProfit4 < 0) {
+    VipCleanProfitElemen4.style.color = "red";
+} else {
+    VipCleanProfitElemen4.style.color = "green";
+}
+if (VipCleanProfit5 < 0) {
+    VipCleanProfitElemen5.style.color = "red";
+} else {
+    VipCleanProfitElemen5.style.color = "green";
+}
+if (VipCleanProfit6 < 0) {
+    VipCleanProfitElemen6.style.color = "red";
+} else {
+    VipCleanProfitElemen6.style.color = "green";
+}
+if (VipCleanProfit7 < 0) {
+    VipCleanProfitElemen7.style.color = "red";
+} else {
+    VipCleanProfitElemen7.style.color = "green";
+}
+if (VipCleanProfit8 < 0) {
+    VipCleanProfitElemen8.style.color = "red";
+} else {
+    VipCleanProfitElemen8.style.color = "green";
+}
+if (VipCleanProfit9 < 0) {
+    VipCleanProfitElemen9.style.color = "red";
+} else {
+    VipCleanProfitElemen9.style.color = "green";
+}
+if (VipCleanProfit10 < 0) {
+    VipCleanProfitElemen10.style.color = "red";
+} else {
+    VipCleanProfitElemen10.style.color = "green";
+
+}
+</script>
+
+
+</body>
+
+</html>
