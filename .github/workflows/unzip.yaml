@@ -1,0 +1,21 @@
+name: Extract Zip File
+
+on:
+  push:
+    branches:
+      - main  # Ganti dengan nama branch yang sesuai
+
+jobs:
+  extract-zip:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Unzip file
+      run: |
+        unzip Web.zip -d extracted_files
+        
+    - name: Move extracted files
+      run: mv extracted_files/* .
