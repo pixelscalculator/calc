@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input dan Perhitungan Numerik</title>
+<style>
+/* CSS untuk menempatkan seluruh kolom di tengah */
+#container {
+    width: 300px; /* Sesuaikan dengan lebar kolom */
+    margin: 0 auto;
+    text-align: center;
+}
+#nilaiDiv {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+
+<!-- Div induk untuk menempatkan seluruh kolom di tengah -->
+<div id="container">
+    <!-- Div untuk input nilai -->
+    <div id="nilaiDiv">
+        <label for="nilaiInput">Masukkan Nilai:</label>
+        <br>
+        <input type="number" id="nilaiInput" name="nilaiInput" style="width: 100px;">
+        <br><br>
+        <label for="jumlahSeedInput">Masukkan Jumlah Seed:</label>
+        <br>
+        <input type="number" id="jumlahSeedInput" name="jumlahSeedInput" style="width: 100px;">
+        <br><br>
+        <label for="modalInput">Masukkan Modal:</label>
+        <br>
+        <input type="number" id="modalInput" name="modalInput" style="width: 100px;">
+    </div>
+</div>
+
+<!-- Div untuk menampilkan hasil perhitungan -->
+<div id="hasilPerhitungan"></div>
+
+<script>
+// Event listener untuk mendeteksi perubahan pada input
+document.getElementById("nilaiInput").addEventListener("input", hitungNilai);
+document.getElementById("jumlahSeedInput").addEventListener("input", hitungNilai);
+document.getElementById("modalInput").addEventListener("input", hitungNilai);
+
+// Fungsi untuk melakukan perhitungan
+function hitungNilai() {
+    // Mendapatkan nilai dari input
+    var nilai = parseFloat(document.getElementById("nilaiInput").value);
+    var jumlahSeed = parseFloat(document.getElementById("jumlahSeedInput").value);
+    var modal = parseFloat(document.getElementById("modalInput").value);
+
+    // Melakukan perhitungan
+    var hasil = nilai * jumlahSeed;
+    var hasilAkhir = hasil * modal;
+
+    // Menampilkan hasil perhitungan tanpa teks tambahan
+    document.getElementById("hasilPerhitungan").textContent = hasilAkhir;
+}
+</script>
+
+</body>
+</html>
