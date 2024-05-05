@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Awal</title>
+  <script>
+    window.onload = function() {
+      fetch('http://websiteanda.com/html/index.html')
+        .then(response => response.text())
+        .then(data => {
+          document.body.innerHTML = data;
+        });
+    };
+  </script>
+</head>
+<body>
+  <!-- Tambahkan elemen-elemen HTML yang diperlukan untuk halaman awal di sini -->
+</body>
+</html>
