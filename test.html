@@ -11,9 +11,19 @@
   <script>
     const apiUrl = "https://pixels-server.pixels.xyz/v1/marketplace/item/itm_popberryFruit?pid=65db67bab3fcbc4b7b905936";
 
-    fetch(apiUrl, {
-      mode: 'no-cors' // Menambahkan mode: 'no-cors'
-    })
+    // Cookie yang ingin Anda kirim
+    const cookies = "pixels-session=IZj20kjf_fR-6aIaCfX_UjAab4fhxj6TH5H9Q7GnPGb1; intercom-device-id-grzhbhyr=bbd4aaf2-02e6-401f-8b8d-e5ba31c82422; _ga=GA1.1.91951925.1714291178; _ga_QGP383C71B=GS1.1.1715126579.2.1.1715128145.0.0.0";
+
+    // Menyiapkan header cookie untuk permintaan
+    const requestOptions = {
+        method: 'GET',
+        headers: {
+            'Cookie': cookies,
+            // Tambahkan header lain jika diperlukan
+        }
+    };
+
+    fetch(apiUrl, requestOptions)
       .then(response => response.text())
       .then(data => {
         // Parsing teks respons menjadi objek JSON
