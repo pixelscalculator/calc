@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menampilkan Nilai Price Pertama</title>
+</head>
+<body>
+  <div id="firstPriceElement"></div>
+
+  <script>
+    const apiUrl = "https://pixels-server.pixels.xyz/v1/marketplace/item/itm_popberryFruit?pid=65db67bab3fcbc4b7b905936";
+
+    fetch(apiUrl, {
+      mode: 'no-cors' // Menambahkan mode: 'no-cors'
+    })
+      .then(response => response.text())
+      .then(data => {
+        // Parsing teks respons menjadi objek JSON
+        const jsonData = JSON.parse(data);
+        // Memeriksa apakah ada data price dalam respons
+        if (jsonData.price && jsonData.price.length > 0) {
+          const firstPrice = jsonData.price[0]; // Mengambil nilai price yang pertama
+          // Menampilkan nilai firstPrice di dalam elemen HTML
+          document.getElementById("firstPriceElement").textContent = "Nilai price yang pertama: " + firstPrice;
+        } else {
+          console.log("Data price tidak ditemukan dalam respons API.");
+        }
+      });
+  </script>
+</body>
+</html>
